@@ -50,11 +50,11 @@ for (let i = 0; i < numbers.length; i++) {
 function isPrime(num) {
   if (num < 2) return false;
   for (let i = 2; i < num; i++) {
-    if (num % i === 1) {
+    if (num % i === 0) {
       return true;  // Supposed to indicate num is NOT prime
     }
   }
-  return false; // Supposed to indicate num IS prime
+  return true; // Supposed to indicate num IS prime
 }
 
 console.log(isPrime(7)); // Expected true but gets false
